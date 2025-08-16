@@ -1,38 +1,47 @@
+# Road Segmentation with U-Net and PyTorch
 
-Road Segmentation with U-Net and PyTorch
-This repository contains a PyTorch implementation of a U-Net based model for semantic segmentation of roads from high-resolution aerial imagery. The project leverages the segmentation-models-pytorch library for a robust implementation and albumentations for efficient data augmentation.
+This repository contains a PyTorch implementation of a U-Net based model for semantic segmentation of roads from high-resolution aerial imagery. The project leverages the `segmentation-models-pytorch` library for a robust implementation and `albumentations` for efficient data augmentation.
 
 The model is trained on a subset of the Massachusetts Roads Dataset.
 
-Demo
+## Demo
+
 Here is an example of the model's performance on an image from the validation set:
 
-Original Image	Ground Truth Mask	Model's Prediction
-(Note: You can generate your own output images and replace these placeholders)		
-Features
-Model: U-Net architecture with a pre-trained timm-efficientnet-b0 encoder.
-Framework: PyTorch.
-Loss Function: A combination of Dice Loss and Binary Cross-Entropy with Logits Loss, effective for segmentation tasks.
-Data Augmentation: On-the-fly data augmentation using the albumentations library (Horizontal and Vertical Flips).
-Data Handling: A custom PyTorch Dataset class for easy data loading and preprocessing.
-Training: A complete training and validation pipeline with progress bars via tqdm.
-Inference: A clear example of how to load the trained model and perform inference on a single image.
-Dataset
-This project uses a subset of the Massachusetts Roads Dataset. The original dataset was introduced by Volodymyr Mnih in his PhD thesis.
+| Original Image | Ground Truth Mask | Model's Prediction |
+| :---: | :---: | :---: |
+| <img src="URL_TO_YOUR_AERIAL_IMAGE.jpg" width="256"> | <img src="URL_TO_YOUR_GROUND_TRUTH_MASK.jpg" width="256"> | <img src="URL_TO_YOUR_PREDICTION_IMAGE.jpg" width="256"> |
 
-Content: The subset contains 200 aerial images (1500x1500 pixels) and their corresponding binary road masks.
-Source: The data is cloned directly from this GitHub repository.
+*(**Action Required:** You need to generate your own output images, upload them to your repository, and replace the placeholder URLs above with the actual links to your images.)*
+
+## Features
+
+- **Model**: U-Net architecture with a pre-trained `timm-efficientnet-b0` encoder.
+- **Framework**: PyTorch.
+- **Loss Function**: A combination of Dice Loss and Binary Cross-Entropy with Logits Loss, effective for segmentation tasks.
+- **Data Augmentation**: On-the-fly data augmentation using the `albumentations` library (Horizontal and Vertical Flips).
+- **Data Handling**: A custom PyTorch `Dataset` class for easy data loading and preprocessing.
+- **Training**: A complete training and validation pipeline with progress bars via `tqdm`.
+- **Inference**: A clear example of how to load the trained model and perform inference on a single image.
+
+## Dataset
+
+This project uses a subset of the **Massachusetts Roads Dataset**. The original dataset was introduced by Volodymyr Mnih in his PhD thesis.
+
+- **Content**: The subset contains 200 aerial images (1500x1500 pixels) and their corresponding binary road masks.
+- **Source**: The data is cloned directly from this [GitHub repository](https://github.com/parth1620/Road_seg_dataset).
+
 If you use this dataset in your research, please cite the original work:
 
-code
-Bibtex
+```bibtex
 @phdthesis{MnihThesis,
   author = {Volodymyr Mnih},
   title = {Machine Learning for Aerial Image Labeling},
   school = {University of Toronto},
   year = {2013}
 }
-Setup and Installation
+```
+## Setup and Installation
 Follow these steps to set up the project environment.
 
 1. Clone the repository:
