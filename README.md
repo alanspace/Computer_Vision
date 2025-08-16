@@ -45,8 +45,8 @@ Follow these steps to set up the project environment.
 1. Clone the repository:
 
 ```
-git clone https://github.com/alanspace/Computer_Vision.git
-cd ComputerVision
+git clone https://github.com/alanspace/Road-Segmentation-with-U-Net-and-PyTorch.git
+cd Road-Segmentation-with-U-Net-and-PyTorch
 ```
 2. Create a virtual environment (recommended):
 
