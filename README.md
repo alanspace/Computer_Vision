@@ -8,7 +8,7 @@ The model is trained on a subset of the Massachusetts Roads Dataset.
 
 Here is an example of the model's performance on an image from the validation set:
 
-<img src="prediction_result.jpg" width="256">
+<img src="prediction_result.png" width="256">
 <!-- | Original Image | Ground Truth Mask | Model's Prediction |
 | :---: | :---: | :---: |
 | <img src="URL_TO_YOUR_AERIAL_IMAGE.jpg" width="256"> | <img src="URL_TO_YOUR_GROUND_TRUTH_MASK.jpg" width="256"> | <img src="URL_TO_YOUR_PREDICTION_IMAGE.jpg" width="256"> | -->
