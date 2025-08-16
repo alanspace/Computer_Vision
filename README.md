@@ -12,8 +12,6 @@ Here is an example of the model's performance on an image from the validation se
 | :---: | :---: | :---: |
 | <img src="URL_TO_YOUR_AERIAL_IMAGE.jpg" width="256"> | <img src="URL_TO_YOUR_GROUND_TRUTH_MASK.jpg" width="256"> | <img src="URL_TO_YOUR_PREDICTION_IMAGE.jpg" width="256"> |
 
-*(**Action Required:** You need to generate your own output images, upload them to your repository, and replace the placeholder URLs above with the actual links to your images.)*
-
 ## Features
 
 - **Model**: U-Net architecture with a pre-trained `timm-efficientnet-b0` encoder.
@@ -46,29 +44,32 @@ Follow these steps to set up the project environment.
 
 1. Clone the repository:
 
-code
-Bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
+```
+git clone 
 cd YOUR_REPOSITORY_NAME
+```
 2. Create a virtual environment (recommended):
 
-code
-Bash
+```
 python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+```
+
 3. Install the required dependencies:
 A requirements.txt file is provided for easy installation.
 
-code
-Bash
+```
 pip install -r requirements.txt
+```
+
 4. Download the dataset:
 The Jupyter Notebook includes a cell to clone the dataset repository. Alternatively, you can run this command in your terminal:
 
-code
-Bash
+```
 git clone https://github.com/parth1620/Road_seg_dataset.git
-Usage
+```
+
+## Usage
 The entire workflow is contained within the Road_Segmentation.ipynb Jupyter Notebook.
 
 1. Launch Jupyter Notebook or Jupyter Lab:
